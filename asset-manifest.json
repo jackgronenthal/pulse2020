@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pulse2020/static/css/main.4c93913f.chunk.css",
-    "main.js": "/pulse2020/static/js/main.4619d36f.chunk.js",
-    "main.js.map": "/pulse2020/static/js/main.4619d36f.chunk.js.map",
+    "main.js": "/pulse2020/static/js/main.37f13196.chunk.js",
+    "main.js.map": "/pulse2020/static/js/main.37f13196.chunk.js.map",
     "runtime~main.js": "/pulse2020/static/js/runtime~main.3aaa282a.js",
     "runtime~main.js.map": "/pulse2020/static/js/runtime~main.3aaa282a.js.map",
     "static/css/2.741abef5.chunk.css": "/pulse2020/static/css/2.741abef5.chunk.css",
@@ -11,7 +11,7 @@
     "03a1d9ec6c5ff9de5d76.worker.js": "/pulse2020/03a1d9ec6c5ff9de5d76.worker.js",
     "03a1d9ec6c5ff9de5d76.worker.js.map": "/pulse2020/03a1d9ec6c5ff9de5d76.worker.js.map",
     "index.html": "/pulse2020/index.html",
-    "precache-manifest.f43e6b4ff21cdb04b74861abf5076cdf.js": "/pulse2020/precache-manifest.f43e6b4ff21cdb04b74861abf5076cdf.js",
+    "precache-manifest.e6b67a062bf0302b06408b25c4e99510.js": "/pulse2020/precache-manifest.e6b67a062bf0302b06408b25c4e99510.js",
     "service-worker.js": "/pulse2020/service-worker.js",
     "static/css/2.741abef5.chunk.css.map": "/pulse2020/static/css/2.741abef5.chunk.css.map",
     "static/css/main.4c93913f.chunk.css.map": "/pulse2020/static/css/main.4c93913f.chunk.css.map",
