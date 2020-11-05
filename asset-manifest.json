@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/pulse_countdown_page/static/css/main.4c93913f.chunk.css",
-    "main.js": "/pulse_countdown_page/static/js/main.c38be45a.chunk.js",
-    "main.js.map": "/pulse_countdown_page/static/js/main.c38be45a.chunk.js.map",
-    "runtime~main.js": "/pulse_countdown_page/static/js/runtime~main.83f13ca1.js",
-    "runtime~main.js.map": "/pulse_countdown_page/static/js/runtime~main.83f13ca1.js.map",
-    "static/css/2.2b441a29.chunk.css": "/pulse_countdown_page/static/css/2.2b441a29.chunk.css",
-    "static/js/2.1504646f.chunk.js": "/pulse_countdown_page/static/js/2.1504646f.chunk.js",
-    "static/js/2.1504646f.chunk.js.map": "/pulse_countdown_page/static/js/2.1504646f.chunk.js.map",
-    "c5f1707951bb8ed4bb48.worker.js": "/pulse_countdown_page/c5f1707951bb8ed4bb48.worker.js",
-    "c5f1707951bb8ed4bb48.worker.js.map": "/pulse_countdown_page/c5f1707951bb8ed4bb48.worker.js.map",
-    "index.html": "/pulse_countdown_page/index.html",
-    "precache-manifest.72817bb074b82326fb9ec28ced5455fc.js": "/pulse_countdown_page/precache-manifest.72817bb074b82326fb9ec28ced5455fc.js",
-    "service-worker.js": "/pulse_countdown_page/service-worker.js",
-    "static/css/2.2b441a29.chunk.css.map": "/pulse_countdown_page/static/css/2.2b441a29.chunk.css.map",
-    "static/css/main.4c93913f.chunk.css.map": "/pulse_countdown_page/static/css/main.4c93913f.chunk.css.map",
-    "static/media/semantic.min.css": "/pulse_countdown_page/static/media/outline-icons.ef60a4f6.woff",
-    "static/media/circle-cropped.png": "/pulse_countdown_page/static/media/circle-cropped.2d37f18a.png"
+    "main.css": "/pulse2020/static/css/main.4c93913f.chunk.css",
+    "main.js": "/pulse2020/static/js/main.4619d36f.chunk.js",
+    "main.js.map": "/pulse2020/static/js/main.4619d36f.chunk.js.map",
+    "runtime~main.js": "/pulse2020/static/js/runtime~main.3aaa282a.js",
+    "runtime~main.js.map": "/pulse2020/static/js/runtime~main.3aaa282a.js.map",
+    "static/css/2.741abef5.chunk.css": "/pulse2020/static/css/2.741abef5.chunk.css",
+    "static/js/2.5371545b.chunk.js": "/pulse2020/static/js/2.5371545b.chunk.js",
+    "static/js/2.5371545b.chunk.js.map": "/pulse2020/static/js/2.5371545b.chunk.js.map",
+    "03a1d9ec6c5ff9de5d76.worker.js": "/pulse2020/03a1d9ec6c5ff9de5d76.worker.js",
+    "03a1d9ec6c5ff9de5d76.worker.js.map": "/pulse2020/03a1d9ec6c5ff9de5d76.worker.js.map",
+    "index.html": "/pulse2020/index.html",
+    "precache-manifest.f43e6b4ff21cdb04b74861abf5076cdf.js": "/pulse2020/precache-manifest.f43e6b4ff21cdb04b74861abf5076cdf.js",
+    "service-worker.js": "/pulse2020/service-worker.js",
+    "static/css/2.741abef5.chunk.css.map": "/pulse2020/static/css/2.741abef5.chunk.css.map",
+    "static/css/main.4c93913f.chunk.css.map": "/pulse2020/static/css/main.4c93913f.chunk.css.map",
+    "static/media/semantic.min.css": "/pulse2020/static/media/outline-icons.ef60a4f6.woff",
+    "static/media/circle-cropped.png": "/pulse2020/static/media/circle-cropped.2d37f18a.png"
   }
 }
