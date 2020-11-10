@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Register from './components/register/register'
 import * as C from './Constants'
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
 
 class App extends Component {
 
@@ -16,6 +17,7 @@ class App extends Component {
     email: '',
     major: '', 
     validEmail: null,
+    modalIsOpen: true
   }
 
   updatePromptJSX = JSX => {
@@ -36,9 +38,7 @@ class App extends Component {
   
 
   submitForm = () => {
-    console.log(this.state.childrenRefs)
-    this.postRegistree()
-    this.state.childrenRefs.registration_form.classList.add('fade-out')
+    window.open("https://github.com/jackgronenthal/pulse2020", "_blank")
   }
 
   checkIfEmailExists = async e => {
@@ -83,7 +83,7 @@ class App extends Component {
       displayErr: true
     })
   }
-  
+
   postRegistree = async () => {
     let body = {email: this.state.childrenRefs[C.EMAIL].value, 
                 name: this.state.firstName + ' ' + this.state.lastName,
@@ -114,15 +114,6 @@ class App extends Component {
       console.log("error", err)
     })
   }
-    
-  // pageScroll = () => {
-  //   var scrolldelay
-  //   while((window.innerHeight + window.scrollY) <= document.body.scrollHeight) {
-  //     window.scrollBy(0, 1);
-  //     scrolldelay = setTimeout(this.pageScroll, 10);
-  //   }
-  //   clearTimeout(scrolldelay)
-  // }
 
   setInput = async e => {
     switch(this.state.currPrompt) {
@@ -260,22 +251,17 @@ class App extends Component {
         break
       }
     }
-
-    //   case C.EMAIL: {
-    //     console.group(C.EMAIL)
-    //     console.log(e)
-    //     console.trace()
-    //     console.groupEnd()
-    //     this.setState({
-    //       email: e
-    //     })
-    //   }
-    // }
 }
+
+  modalToggle = () => this.setState({ modalIsOpen: !this.state.modalIsOpen })
 
   render() {
     return (
       <div>
+        <Modal isOpen={ this.state.modalIsOpen } toggle={this.modalToggle} >
+          <ModalHeader toggle={this.modalToggle} style={{color: "black"}}></ModalHeader>
+          <ModalBody style={{color: "black"}}> Hey There 👋 I hope you enjoy this purpose built registration form created by <a id="modal_link" href="https://www.linkedin.com/in/jackgronenthal/">Jack Gronenthal</a> for ECE Pulse, a technology conference hosted at <a id="modal_link" href="https://ece.illinois.edu/">UIUC</a>. Don't worry, we've had our fun and the conference has passed. Your responses won't be logged. </ModalBody>
+        </Modal>
         <Register currPrompt={this.state.currPrompt}
                   setCurPrompt={(e) => this.setState({currPrompt: e})} 
                   setInput={(e) => this.setInput(e)}

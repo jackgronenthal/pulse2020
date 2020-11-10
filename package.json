@@ -2,7 +2,7 @@
   "name": "pulse-2020",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://rishidk22.github.io/pulse_countdown_page",
+  "homepage": "https://jackgronenthal.github.io/pulse2020/",
   "dependencies": {
     "@csstools/normalize.css": "^10.1.0",
     "@material-ui/core": "^4.2.0",
@@ -32,7 +32,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "predeploy": "yarn run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

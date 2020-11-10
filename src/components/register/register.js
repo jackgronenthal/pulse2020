@@ -148,7 +148,7 @@ class Register extends Component {
       }
 
       case C.SUBMIT: {
-          promptText = (<p>Would you like to <strong>submit your registration</strong>?</p>)
+          promptText = (<p>Would you like to <strong><strike>submit your registration</strike></strong> visit my GitHub?</p>)
           showDetails = false
           errText = ''
           break

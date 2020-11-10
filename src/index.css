@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+#modal_link:link { color: grey }
+#modal_link:visited { color: black }
+#modal_link:hover { color: black }
+#modal_link:active { color: black }
