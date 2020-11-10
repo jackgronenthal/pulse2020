@@ -56,8 +56,6 @@ class Register extends Component {
   }
 
   focusOnOtherMajor = () => {
-    // console.log(this.refs)
-    // console.log(this.refs[C.OTHER_MAJOR])
   }
 
   dimMajors = e => {
