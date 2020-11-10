@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4e4e9e7daf2f4d17e71b25e1a5aeb217",
+    "revision": "e2604cfcde1484dd17cdf0c4ddf37b4d",
     "url": "/pulse2020/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pulse2020/static/css/2.3b54882c.chunk.css"
   },
   {
-    "revision": "60400fb0868e30291ba9",
+    "revision": "26f522d610c782e8122a",
     "url": "/pulse2020/static/css/main.7406dda6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pulse2020/static/js/2.a10ec6f2.chunk.js"
   },
   {
-    "revision": "60400fb0868e30291ba9",
-    "url": "/pulse2020/static/js/main.c5e8ef9f.chunk.js"
+    "revision": "26f522d610c782e8122a",
+    "url": "/pulse2020/static/js/main.c75c3120.chunk.js"
   },
   {
     "revision": "5f7a6313ef8bc63bda39",
