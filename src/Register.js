@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import React, { Component } from 'react';
 import Register from './components/register/register'
 import * as C from './Constants'
@@ -42,26 +43,13 @@ class App extends Component {
   }
 
   checkIfEmailExists = async e => {
-    // Create Heades
-    let body = {email: e}
-    let h = new Headers()
-    h.append('Accept', 'application/json')
-    h.append('Content-Type', 'application/json')
-    // Create Options
-    let options = {
-      method: 'POST', 
-      headers: h,
-      body: JSON.stringify(body)
-    }
-    let request = new Request(C.VERIFY_EMAIL, options)
+    let request = new Request("https://reqres.in/api/users?delay=3")
     let data = await fetch(request)
     .then((response) => {
-      if(response.status == 400) {
-        console.log("EMAIL IN USE")
+      if(Math.random() > 0.5) {
         this.displayEmailError('errMessageAlt')
         return false
-      } else if(response.status == 200) {
-        console.log("UNIQUE EMAIL")
+      } else if(response.status === 200) {
         return true
       }
     })
@@ -69,7 +57,6 @@ class App extends Component {
   }
 
   displayEmailError = (type = 'errMessage') => {
-    console.log("TYPE", type)
     if(this.state.childrenRefs.email_row.classList.contains('inactive')) {
       this.state.childrenRefs.email_row.classList.add('active')
       this.state.childrenRefs.email_row.classList.remove('inactive')
@@ -148,14 +135,13 @@ class App extends Component {
       }
 
       case C.EMAIL: {
-        console.log("SPINNER", this.state.childrenRefs.email_spinner)
         this.state.childrenRefs.email_spinner.style.display = ''
         if(this.validateInput(e)) {
           if(!( await this.checkIfEmailExists(e.toLowerCase()))) {
             this.state.childrenRefs.email_spinner.style.display = 'none'
             break
           }
-          if(e != this.state.email) {
+          if(e !== this.state.email) {
             this.state.childrenRefs.errMessage.classList.remove('fade-in')
             this.state.childrenRefs.errMessage.classList.add('fade-out')
             this.state.childrenRefs.errMessageAlt.classList.remove('fade-in')

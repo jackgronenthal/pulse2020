@@ -1,3 +1,4 @@
+/* eslint-disable default-case */
 import React, { Component } from "react";
 import Typist from "react-typist";
 import * as C from "../../Constants";
@@ -130,7 +131,7 @@ class Register extends Component {
         showDetails = true
         detailText = "Emails will be used for checking into the Pulse 2020 conference as well as essential communciations."
         errText = "Hmm... that does not look like a valid email."
-        errTextAlt = "Hmm... it appears that this email is already in use."
+        errTextAlt = (<p>Hmm... it appears that this email is already in use. <strong>This is a simulated error.</strong></p>)
         break
       }
 
