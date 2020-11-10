@@ -43,15 +43,10 @@ class App extends Component {
   }
 
   checkIfEmailExists = async e => {
-    let request = new Request("https://reqres.in/api/users?delay=3")
+    let request = new Request("https://reqres.in/api/users?delay=3") // This is used to simulate an asynchronous DB interaction.
     let data = await fetch(request)
     .then((response) => {
-      if(Math.random() > 0.5) {
-        this.displayEmailError('errMessageAlt')
-        return false
-      } else if(response.status === 200) {
-        return true
-      }
+      return true // This was where legitamate email checking was made. However, this has been stripped.
     })
     return data
   }
@@ -91,14 +86,11 @@ class App extends Component {
     await fetch(request)
     .then((response) => {
       if(response.ok) {
-        console.log("SUCCESS")
         return response.json()
       } else {
-        console.log("FAIL")
       }
     })
     .catch((err) => {
-      console.log("error", err)
     })
   }
 
@@ -171,7 +163,6 @@ class App extends Component {
             displayErr: false
           })
         } else {
-          console.log("MAJOR", e.target.innerText)
           this.setState({
             currPrompt: C.SUBMIT,
             major: e.target.innerText,
@@ -189,7 +180,6 @@ class App extends Component {
       }
 
       case C.OTHER_MAJOR: {
-        console.log(this.state.childrenRefs)
         this.setState({
           currPrompt: C.SUBMIT,
           major: e
